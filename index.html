@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alon Sereno Resort &amp; Spa — Design Mock</title>
+<meta name="description" content="Design mock for a fictional boutique beach resort. Not a real business; no bookings are taken.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="mock-ribbon" role="note">Design mock &middot; Alon Sereno is a fictional resort &mdash; no real bookings or business</div>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="logo" aria-label="Alon Sereno Resort &amp; Spa — home">
+      <svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1"/><path d="M7 24c4-4 7-4 11 0s7 4 11 0 5-3 4-3" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M7 29c4-4 7-4 11 0s7 4 11 0 5-3 4-3" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" opacity=".55"/><circle cx="20" cy="13" r="3" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+      <span class="logo__text"><span class="logo__name">Alon Sereno</span><span class="logo__sub">Resort &amp; Spa</span></span>
+    </a>
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a href="#about">The Resort</a>
+      <a href="#rooms">Stay</a>
+      <a href="#amenities">Amenities</a>
+      <a href="#dining">Dining</a>
+      <a href="#offers">Offers</a>
+      <a href="#location">Location</a>
+    </nav>
+    <a href="#booking" class="btn btn--gold nav__cta" id="navBook">Book Now</a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero" aria-label="Welcome">
+  <div class="hero__media"><div class="hero__bg" id="heroBg" role="img" aria-label="Illustration: beachfront thatched villas at golden hour"></div></div>
+  <div class="hero__veil"></div>
+  <div class="hero__content">
+    <p class="eyebrow eyebrow--light">Palawan, Philippines &middot; Fictional</p>
+    <h1 class="hero__title">Where the tide<br>keeps time</h1>
+    <p class="hero__lead">Eighteen quiet villas on a private crescent of white sand.</p>
+  </div>
+
+  <form class="booking" id="booking" novalidate aria-label="Check availability">
+    <div class="booking__field">
+      <label for="checkin">Check-in</label>
+      <input type="date" id="checkin" name="checkin">
+    </div>
+    <div class="booking__field">
+      <label for="checkout">Check-out</label>
+      <input type="date" id="checkout" name="checkout">
+    </div>
+    <div class="booking__field">
+      <label for="guests">Guests</label>
+      <select id="guests" name="guests">
+        <option>1 adult</option>
+        <option selected>2 adults</option>
+        <option>2 adults, 1 child</option>
+        <option>2 adults, 2 children</option>
+        <option>3 adults</option>
+        <option>4 adults</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn--navy booking__btn">Check availability</button>
+    <p class="booking__msg" id="bookingMsg" role="status" aria-live="polite"></p>
+  </form>
+</section>
+
+<!-- ABOUT -->
+<section class="section about" id="about">
+  <div class="container about__grid">
+    <div class="about__text reveal">
+      <p class="eyebrow">Welcome</p>
+      <h2 class="title">A shoreline<br>made for stillness</h2>
+      <span class="hairline" aria-hidden="true"></span>
+      <p class="lead">Alon Sereno is a small resort built around one idea: that the best luxury is time. Handwoven rattan, native hardwoods and open-air pavilions frame the bay, and every villa faces the water.</p>
+      <p>Mornings begin with the sound of the tide and a slow breakfast on your deck. Afternoons belong to the lagoon, the spa, or nothing at all. Our team of just forty welcomes each guest by name.</p>
+      <ul class="stats">
+        <li><strong>18</strong><span>Villas &amp; suites</span></li>
+        <li><strong>400&nbsp;m</strong><span>Private beach</span></li>
+        <li><strong>2026</strong><span>Mock opening</span></li>
+      </ul>
+    </div>
+    <div class="about__media reveal reveal--d2">
+      <figure class="frame frame--tall"><img src="images/pool.svg" alt="Infinity pool at dusk overlooking the sea" width="1024" height="576" loading="lazy"></figure>
+      <figure class="frame frame--small"><img src="images/spa.svg" alt="Spa treatment room opening to a tropical garden" width="1024" height="576" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ROOMS -->
+<section class="section rooms" id="rooms">
+  <div class="container">
+    <header class="section__head reveal">
+      <p class="eyebrow">Rooms &amp; Suites</p>
+      <h2 class="title">Four ways to stay</h2>
+      <span class="hairline hairline--center" aria-hidden="true"></span>
+    </header>
+    <div class="cards">
+      <article class="card reveal">
+        <figure class="card__img"><img src="images/room-deluxe.svg" alt="Deluxe ocean room with rattan furniture and balcony" width="1024" height="576" loading="lazy"></figure>
+        <div class="card__body">
+          <p class="card__meta">38 m&sup2; &middot; King bed &middot; Ocean view</p>
+          <h3>Deluxe Ocean Room</h3>
+          <p class="card__desc">Airy and bright, with a private terrace above the shoreline.</p>
+          <div class="card__foot"><p class="price"><span>from</span> &#8369;9,800 <small>/ night</small></p><a href="#" class="link" data-mock>View room</a></div>
+        </div>
+      </article>
+      <article class="card reveal reveal--d1">
+        <figure class="card__img"><img src="images/room-garden.svg" alt="Garden suite with four-poster bed" width="1024" height="576" loading="lazy"></figure>
+        <div class="card__body">
+          <p class="card__meta">52 m&sup2; &middot; Four-poster &middot; Garden view</p>
+          <h3>Garden Suite</h3>
+          <p class="card__desc">Dark hardwoods, white linen and floor-to-ceiling garden windows.</p>
+          <div class="card__foot"><p class="price"><span>from</span> &#8369;13,500 <small>/ night</small></p><a href="#" class="link" data-mock>View room</a></div>
+        </div>
+      </article>
+      <article class="card reveal reveal--d2">
+        <figure class="card__img"><img src="images/villa.svg" alt="Beach villa with a private plunge pool" width="1024" height="576" loading="lazy"></figure>
+        <div class="card__body">
+          <p class="card__meta">74 m&sup2; &middot; Plunge pool &middot; Beachfront</p>
+          <h3>Beach Villa</h3>
+          <p class="card__desc">A private deck and plunge pool steps from the sand.</p>
+          <div class="card__foot"><p class="price"><span>from</span> &#8369;21,000 <small>/ night</small></p><a href="#" class="link" data-mock>View room</a></div>
+        </div>
+      </article>
+      <article class="card reveal reveal--d3">
+        <figure class="card__img"><img src="images/room-suite.svg" alt="Alon signature suite living room facing the sea" width="1024" height="576" loading="lazy"></figure>
+        <div class="card__body">
+          <p class="card__meta">120 m&sup2; &middot; Two bedrooms &middot; Butler</p>
+          <h3>Alon Signature Suite</h3>
+          <p class="card__desc">Our finest address: two bedrooms, a lounge and a sunset terrace.</p>
+          <div class="card__foot"><p class="price"><span>from</span> &#8369;38,000 <small>/ night</small></p><a href="#" class="link" data-mock>View room</a></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- AMENITIES -->
+<section class="section amenities" id="amenities">
+  <div class="container">
+    <header class="section__head section__head--light reveal">
+      <p class="eyebrow eyebrow--gold">Amenities</p>
+      <h2 class="title">Quietly considered</h2>
+      <span class="hairline hairline--center" aria-hidden="true"></span>
+    </header>
+    <ul class="amen-grid">
+      <li class="reveal">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M4 32c4-4 8-4 12 0s8 4 12 0 8-4 12 0 4 2 4 2M4 40c4-4 8-4 12 0s8 4 12 0 8-4 12 0 4 2 4 2"/><path d="M16 28V10a4 4 0 018 0M32 28V10a4 4 0 00-8 0M16 16h16M16 22h16"/></svg>
+        <h3>Infinity Pool</h3><p>Heated lagoon-edge pool, open until 10&nbsp;pm.</p>
+      </li>
+      <li class="reveal reveal--d1">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 40C14 34 8 27 8 20c0-6 5-10 10-8 3 1 5 3 6 6 1-3 3-5 6-6 5-2 10 2 10 8 0 7-6 14-16 20z" transform="translate(0 -2)"/><path d="M24 14c0-4 2-7 5-8" /></svg>
+        <h3>Spa &amp; Wellness</h3><p>Hilot massage, steam and garden treatment villas.</p>
+      </li>
+      <li class="reveal reveal--d2">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M14 6v14c0 3 2 5 4 5v17M14 6v10M18 6v10M22 6v14c0-3-2-5-4-5"/><path d="M34 6c-4 3-6 8-6 14h6v22"/></svg>
+        <h3>Restaurant</h3><p>Seaside dining led by Filipino coastal cuisine.</p>
+      </li>
+      <li class="reveal">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M4 24h6M38 24h6M10 18v12M38 18v12M14 14v20M34 14v20M14 24h20"/></svg>
+        <h3>Fitness Studio</h3><p>Open-air gym and sunrise yoga on the deck.</p>
+      </li>
+      <li class="reveal reveal--d1">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 30l14-3 8-14c1-2 4-2 4 0l-3 13 11 3c3 1 3 4 0 5l-11 2-1 9-4-1-1-8-14-1z" transform="rotate(-20 24 24) translate(0 -2)"/></svg>
+        <h3>Airport Shuttle</h3><p>Private transfer from Busuanga Airport, 40 minutes.</p>
+      </li>
+      <li class="reveal reveal--d2">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 20c10-9 26-9 36 0M12 26c7-6 17-6 24 0M18 32c4-3 8-3 12 0"/><circle cx="24" cy="38" r="1.6"/></svg>
+        <h3>Fast Wi-Fi</h3><p>Complimentary fibre connection throughout the resort.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section gallery" id="gallery">
+  <div class="container">
+    <header class="section__head reveal">
+      <p class="eyebrow">Gallery</p>
+      <h2 class="title">Moments by the bay</h2>
+      <span class="hairline hairline--center" aria-hidden="true"></span>
+    </header>
+    <div class="gal-grid">
+      <figure class="g g--a reveal"><img src="images/hero.svg" alt="Resort beach and villas at sunset" loading="lazy" width="1024" height="576"><figcaption>The beach</figcaption></figure>
+      <figure class="g g--b reveal reveal--d1"><img src="images/dining.svg" alt="Seaside dining table at sunset" loading="lazy" width="1024" height="576" style="object-position:30% 50%"><figcaption>Sunset dining</figcaption></figure>
+      <figure class="g g--c reveal reveal--d2"><img src="images/spa.svg" alt="Spa room" loading="lazy" width="1024" height="576" style="object-position:25% 50%"><figcaption>The spa</figcaption></figure>
+      <figure class="g g--d reveal"><img src="images/room-garden.svg" alt="Garden suite" loading="lazy" width="1024" height="576" style="object-position:30% 50%"><figcaption>Garden Suite</figcaption></figure>
+      <figure class="g g--e reveal reveal--d1"><img src="images/villa.svg" alt="Villa deck and plunge pool" loading="lazy" width="1024" height="576"><figcaption>Beach Villa</figcaption></figure>
+      <figure class="g g--f reveal reveal--d2"><img src="images/pool.svg" alt="Infinity pool" loading="lazy" width="1024" height="576" style="object-position:70% 50%"><figcaption>Infinity pool</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- DINING -->
+<section class="section dining" id="dining">
+  <div class="container dining__grid">
+    <figure class="dining__img reveal"><img src="images/dining.svg" alt="Candlelit table above the sea at sunset" width="1024" height="576" loading="lazy"></figure>
+    <div class="dining__text reveal reveal--d2">
+      <p class="eyebrow">Dining</p>
+      <h2 class="title">Salt, smoke<br>&amp; sunset</h2>
+      <span class="hairline" aria-hidden="true"></span>
+      <p class="lead">Hampas Restaurant serves the Calamian coast on a plate: line-caught fish, coconut and calamansi, grilled over native wood and served on a terrace above the water.</p>
+      <dl class="dl">
+        <div><dt>Breakfast</dt><dd>6:30 &ndash; 10:30 am</dd></div>
+        <div><dt>Lunch</dt><dd>12:00 &ndash; 3:00 pm</dd></div>
+        <div><dt>Dinner</dt><dd>6:00 &ndash; 10:00 pm</dd></div>
+      </dl>
+      <a href="#" class="btn btn--outline" data-mock>View menus</a>
+    </div>
+  </div>
+</section>
+
+<!-- OFFERS -->
+<section class="offers" id="offers">
+  <div class="offers__bg" role="img" aria-label="Infinity pool at dusk"></div>
+  <div class="offers__veil"></div>
+  <div class="offers__frame reveal">
+    <p class="eyebrow eyebrow--gold">Special Offer</p>
+    <h2 class="title title--light">Stay four, pay three</h2>
+    <span class="hairline hairline--center" aria-hidden="true"></span>
+    <p>Book four nights in any villa or suite and enjoy the fourth on us, with daily breakfast and a sunset spa ritual for two. Valid through 31 March 2027.</p>
+    <a href="#booking" class="btn btn--gold">Reserve this offer</a>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section reviews" id="reviews">
+  <div class="container">
+    <header class="section__head reveal">
+      <p class="eyebrow">Guest Reviews</p>
+      <h2 class="title">In their words</h2>
+      <span class="hairline hairline--center" aria-hidden="true"></span>
+    </header>
+    <div class="slider reveal">
+      <div class="slider__track" id="sliderTrack" tabindex="0" aria-label="Guest reviews">
+        <blockquote class="review">
+          <p class="stars" aria-label="5 out of 5">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+          <p class="review__text">&ldquo;Waking up to that water, with coffee already waiting on the deck, felt unreal. The calmest few days we have had in years.&rdquo;</p>
+          <footer><strong>Isabel &amp; Marco R.</strong><span>Manila &middot; Honeymoon</span></footer>
+        </blockquote>
+        <blockquote class="review">
+          <p class="stars" aria-label="5 out of 5">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+          <p class="review__text">&ldquo;The food at Hampas was the surprise. Simple, honest and unforgettable. Staff remembered every preference from the first night.&rdquo;</p>
+          <footer><strong>Camille T.</strong><span>Cebu &middot; Solo traveller</span></footer>
+        </blockquote>
+        <blockquote class="review">
+          <p class="stars" aria-label="5 out of 5">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+          <p class="review__text">&ldquo;Elegant without being stuffy. Our kids loved the lagoon, and we loved that nothing felt crowded. We are already planning a return.&rdquo;</p>
+          <footer><strong>The Villanueva Family</strong><span>Singapore &middot; Family trip</span></footer>
+        </blockquote>
+        <blockquote class="review">
+          <p class="stars" aria-label="5 out of 5">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+          <p class="review__text">&ldquo;The spa villa, the quiet, the light at six in the evening. It is the kind of place you hesitate to tell people about.&rdquo;</p>
+          <footer><strong>Daniel K.</strong><span>Sydney &middot; Couple&rsquo;s retreat</span></footer>
+        </blockquote>
+        <blockquote class="review">
+          <p class="stars" aria-label="5 out of 5">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+          <p class="review__text">&ldquo;Every detail was thought through, from the airport shuttle to the turndown. Truly relaxing, and truly Filipino hospitality.&rdquo;</p>
+          <footer><strong>Patricia L.</strong><span>Makati &middot; Anniversary</span></footer>
+        </blockquote>
+      </div>
+      <div class="slider__ctrl">
+        <button class="arrow" id="prevBtn" aria-label="Previous reviews"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <div class="dots" id="dots" aria-hidden="true"></div>
+        <button class="arrow" id="nextBtn" aria-label="Next reviews"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+      </div>
+    </div>
+    <p class="note">Sample reviews written for this design mock.</p>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section class="section location" id="location">
+  <div class="container location__grid">
+    <div class="location__text reveal">
+      <p class="eyebrow">Location</p>
+      <h2 class="title">On the edge<br>of the Calamians</h2>
+      <span class="hairline" aria-hidden="true"></span>
+      <p class="lead">Alon Sereno sits on a private cove in northern Palawan, a short drive from Busuanga Airport and a boat ride from the clearest dive sites in the country.</p>
+      <ul class="facts">
+        <li><span>Busuanga Airport (USU)</span><em>40 min by private shuttle</em></li>
+        <li><span>Coron town</span><em>25 min</em></li>
+        <li><span>Island-hopping pier</span><em>5 min</em></li>
+      </ul>
+      <p class="addr">Fictional address &middot; Barangay Alon, Busuanga, Palawan 5316</p>
+    </div>
+    <div class="map reveal reveal--d2" role="img" aria-label="Map placeholder showing the resort on a coastline">
+      <svg viewBox="0 0 600 460" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <rect width="600" height="460" fill="#dde7e6"/>
+        <path d="M0 0h600v120c-60 20-110-10-170 10s-90 70-170 60-110-50-190-20L0 190z" fill="#ece5d6"/>
+        <path d="M0 190c80-30 120 10 190 20s110-40 170-60 110 30 170 10 70-20 70-20v360H0z" fill="#e8dfcc"/>
+        <path d="M0 250c90-20 150 30 230 20s120-60 190-50 120 20 180 0" fill="none" stroke="#c9d6d4" stroke-width="2"/>
+        <path d="M0 330c90-20 150 30 230 20s120-60 190-50 120 20 180 0v160H0z" fill="#cfdcdb"/>
+        <path d="M-10 90C100 110 180 90 260 120s140 70 230 60 120-40 130-40" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".9"/>
+        <path d="M260 120C270 170 280 210 300 250" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".9"/>
+        <g transform="translate(300 232)"><circle r="26" fill="#b39254" opacity=".18"/><circle r="9" fill="#14263a"/><circle r="3.5" fill="#f7f3ec"/></g>
+        <text x="300" y="285" text-anchor="middle" font-family="Inter,sans-serif" font-size="12" letter-spacing="3" fill="#14263a">ALON SERENO</text>
+        <text x="450" y="395" text-anchor="middle" font-family="Cormorant Garamond,serif" font-style="italic" font-size="17" fill="#6c8a8a">Calamian Sea</text>
+        <text x="120" y="70" text-anchor="middle" font-family="Cormorant Garamond,serif" font-style="italic" font-size="17" fill="#9a8d70">Busuanga</text>
+      </svg>
+      <span class="map__tag">Map placeholder</span>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="section newsletter" id="newsletter">
+  <div class="container narrow reveal">
+    <p class="eyebrow">Newsletter</p>
+    <h2 class="title">Letters from the bay</h2>
+    <span class="hairline hairline--center" aria-hidden="true"></span>
+    <p>Seasonal offers, new menus and quiet-season rates, sent a few times a year.</p>
+    <form class="newsletter__form" id="newsForm" novalidate>
+      <label for="email" class="sr">Email address</label>
+      <input type="email" id="email" placeholder="Your email address" autocomplete="email">
+      <button type="submit" class="btn btn--navy">Subscribe</button>
+    </form>
+    <p class="booking__msg" id="newsMsg" role="status" aria-live="polite"></p>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__brand">
+      <a href="#top" class="logo logo--light">
+        <svg class="logo__mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1"/><path d="M7 24c4-4 7-4 11 0s7 4 11 0 5-3 4-3" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/><path d="M7 29c4-4 7-4 11 0s7 4 11 0 5-3 4-3" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" opacity=".55"/><circle cx="20" cy="13" r="3" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+        <span class="logo__text"><span class="logo__name">Alon Sereno</span><span class="logo__sub">Resort &amp; Spa</span></span>
+      </a>
+      <p>A fictional boutique resort, created as a website design mock.</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li>Barangay Alon, Busuanga<br>Palawan 5316, Philippines</li>
+        <li><a href="mailto:hello@alonsereno.example">hello@alonsereno.example</a></li>
+        <li>+63 900 000 0000</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Hours</h4>
+      <ul>
+        <li>Front desk &middot; 24 hours</li>
+        <li>Check-in &middot; 2:00 pm</li>
+        <li>Check-out &middot; 12:00 noon</li>
+        <li>Reservations &middot; 8 am &ndash; 8 pm</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Follow</h4>
+      <ul class="social">
+        <li><a href="#" aria-label="Instagram" data-mock><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="12" cy="12" r="3.6"/><circle cx="16.8" cy="7.2" r=".6"/></svg></a></li>
+        <li><a href="#" aria-label="Facebook" data-mock><svg viewBox="0 0 24 24"><path d="M14 21v-8h3l.5-3.5H14V7.5C14 6.5 14.5 6 15.5 6H17.5V3C17 3 16 2.8 15 2.8c-2.6 0-4 1.6-4 4V9.5H8V13h3v8z" transform="translate(0 .4)"/></svg></a></li>
+        <li><a href="#" aria-label="X" data-mock><svg viewBox="0 0 24 24"><path d="M4 4l16 16M20 4L4 20"/></svg></a></li>
+        <li><a href="#" aria-label="YouTube" data-mock><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="4"/><path d="M10.5 9.5l4 2.5-4 2.5z"/></svg></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer__bar">
+    <span>&copy; 2026 Alon Sereno Resort &amp; Spa &mdash; design mock, not a real business.</span>
+    <span>Imagery: illustrated placeholders.</span>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="js/main.js"></script>
+</body>
+</html>
